@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ comments }) => {
+export default function CommentList({ comments }) {
   const renderedComments = comments.map((comment) => {
     const content =
       comment.status === "approved"
@@ -13,4 +13,4 @@ export default ({ comments }) => {
   });
 
   return <ul>{renderedComments}</ul>;
-};
+}
